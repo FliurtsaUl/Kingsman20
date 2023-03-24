@@ -12,7 +12,7 @@
                         Width="96"
                         Margin="0 40 0 0"
                         >
-                <Image Source="/image/reg.png" 
+                <Image Source="/Res/ImageAuth/reg.png" 
                        Height="79" 
                        Width="96"
                        />
@@ -27,19 +27,21 @@
                        HorizontalAlignment="Center"
                        Margin="0 30 0 0" Foreground="#FFFDFDFD"/>
             <TextBox x:Name="TbLogin"
+                     Text="Login"
                      FontSize="18"
                      Width="166"
                      Height="26"
                      HorizontalAlignment="Center"
                      Margin="0 8 0 0"
                      Background="#FFA1CDF9" 
-                     BorderBrush="#FFA1CDF9"/>
+                     BorderBrush="#FFA1CDF9"
+                     Foreground="#FFC7E2FB"/>
             <TextBlock Text="Password"
                        FontSize="18"
                        HorizontalAlignment="Center"
                        Margin="0 5 0 0" Foreground="#FFFDFDFD"/>
             <PasswordBox x:Name="PbPassword"
-                         FontSize="181"
+                         FontSize="18"
                          Width="166"
                          Height="26"
                          HorizontalAlignment="Center"

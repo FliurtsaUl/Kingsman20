@@ -23,7 +23,7 @@ namespace Kingsman20.DataBase
         public int IDOrder { get; set; }
         public int IdEmployee { get; set; }
         public int IdClient { get; set; }
-        public System.DateTime DateTime { get; set; }
+        public System.DateTime StartTime { get; set; }
         public System.DateTime EndDate { get; set; }
     
         public virtual Client Client { get; set; }

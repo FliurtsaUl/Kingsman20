@@ -5,29 +5,29 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="5921d98c58bb4987afe65b37afd92247" Name="Diagram1">
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Branch" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Client" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.EmplBranch" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Employee" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Gender" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Order" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.OrderService" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Position" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Service" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Size" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.TypeOfService" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__EmplBranc__IdBra__4E88ABD4" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Client__IdBottom__3F466844" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Client__IdGender__403A8C7D" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Client__IdTopSiz__3E52440B" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Order__IdClient__571DF1D5" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__EmplBranc__IdEmp__4D94879B" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Employee__IdPosi__4AB81AF0" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Order__IdEmploye__5629CD9C" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__OrderServ__IdOrd__59FA5E80" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__OrderServ__IdSer__5AEE82B9" ManuallyRouted="false" />
-        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Service__IdTypeI__534D60F1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Branch" Width="1.5" PointX="3" PointY="15.625" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Client" Width="1.5" PointX="3" PointY="2.25" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.EmplBranch" Width="1.5" PointX="5.25" PointY="8.5" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Employee" Width="1.5" PointX="3" PointY="8" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Gender" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Order" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.OrderService" Width="1.5" PointX="7.5" PointY="3.5" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Position" Width="1.5" PointX="0.75" PointY="8.625" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Service" Width="1.5" PointX="5.25" PointY="12.25" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.Size" Width="1.5" PointX="0.75" PointY="3.625" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="7" />
+        <EntityTypeShape EntityType="KingsmanVoroncovaFliurta11_20Model.TypeOfService" Width="1.5" PointX="3" PointY="12.75" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__EmplBranc__IdBra__4E88ABD4" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Client__IdBottom__3F466844" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Client__IdGender__403A8C7D" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Client__IdTopSiz__3E52440B" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Order__IdClient__571DF1D5" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__EmplBranc__IdEmp__4D94879B" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Employee__IdPosi__4AB81AF0" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Order__IdEmploye__5629CD9C" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__OrderServ__IdOrd__59FA5E80" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__OrderServ__IdSer__5AEE82B9" />
+        <AssociationConnector Association="KingsmanVoroncovaFliurta11_20Model.FK__Service__IdTypeI__534D60F1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

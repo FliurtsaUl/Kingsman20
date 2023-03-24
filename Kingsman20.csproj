@@ -248,10 +248,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />
-    <Folder Include="Res\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="image\reg.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -267,6 +263,13 @@
       <DependentUpon>DB.edmx</DependentUpon>
       <LastGenOutput>DB.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\ImageAuth\reg.png" />
+    <Resource Include="Res\ImageService\ikonki\user.png" />
+    <Resource Include="Res\ImageService\product\miniplat.jpg" />
+    <Resource Include="Res\ImageService\ikonki\korz.png" />
+    <Resource Include="Res\ImageService\product\blue.jpg" />
+    <Resource Include="Res\defImg.jpeg" />
+    <Resource Include="Res\ImageService\ikonki\geo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

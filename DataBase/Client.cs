@@ -32,6 +32,8 @@ namespace Kingsman20.DataBase
         public Nullable<int> IdBottomSize { get; set; }
         public Nullable<decimal> BootsSize { get; set; }
         public Nullable<double> Discount { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
     
         public virtual Size Size { get; set; }
         public virtual Gender Gender { get; set; }
