@@ -24,4 +24,4 @@
 
 <b>Меню сервиса</b>
 
-![image](https://user-images.githubusercontent.com/126570601/228207775-eb5a87bf-281a-487b-abdb-0fe29ea4f6c6.png)
+![image](https://user-images.githubusercontent.com/126571078/228219751-54422e8d-df36-4a89-820d-6386bcb23978.png)
