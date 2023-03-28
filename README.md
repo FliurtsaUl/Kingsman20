@@ -14,8 +14,7 @@
 
 <b>Окно Авторизации</b>
 
-![image](https://user-images.githubusercontent.com/126570601/225821423-e42c606b-8841-42db-898f-4cd41a979017.png)
-
+![image](https://user-images.githubusercontent.com/126570601/228218255-27e2b4ee-3f17-4c7d-ab93-98c3fc609141.png)
 
 <b>Удачный и неудачный вход</b>
 
