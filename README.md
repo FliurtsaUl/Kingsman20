@@ -25,3 +25,7 @@
 <b>Меню сервиса</b>
 
 ![image](https://user-images.githubusercontent.com/126571078/228219751-54422e8d-df36-4a89-820d-6386bcb23978.png)
+
+<b>Окно регистрации </b>
+
+![image](https://user-images.githubusercontent.com/126571078/228220082-c38f4719-cbc8-4897-b01e-207876839078.png)
