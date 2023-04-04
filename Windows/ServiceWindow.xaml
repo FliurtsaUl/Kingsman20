@@ -125,7 +125,7 @@
         <ListView x:Name="LvService"
             Grid.Row="2"
             Background="#FFA2CEF9"       
-            d:ItemsSource="{d:SampleData ItemCount=5}"
+            d:ItemsSource="{d:SampleData ItemCount=6}"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -170,12 +170,20 @@
                                        Foreground="#808080"
                                        TextWrapping="Wrap"/>
                         </StackPanel>
-
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-
+        <Button x:Name="BtnAddService"
+                Grid.Row="3"
+                Width="40"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Right"
+                Margin="0 0 65 0"
+                Click="BtnAddService_Click">
+            <Image Source="/Res/ImageService/ikonki/add.png"/>
+        </Button>
     </Grid>
 </Window>
