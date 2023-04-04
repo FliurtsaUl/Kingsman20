@@ -60,5 +60,13 @@
                     Foreground="#FF4472B0"
                     />
         </StackPanel>
+        <TextBlock x:Name="BtnReg" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Center"
+                   Text="Регистрация"
+                   Margin="0,433,0,0"
+                   FontSize="16"
+                   Foreground="White" 
+                   MouseLeftButtonUp="BtnReg_MouseLeftButtonUp"/>
     </Grid>
 </Window>
