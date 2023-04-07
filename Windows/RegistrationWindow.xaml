@@ -17,7 +17,7 @@
                    HorizontalAlignment="Left"
                    Margin="5 10 0 0"
                        />
-            <TextBlock Text="Authorization"
+            <TextBlock Text="Registration"
                        FontSize="20"
                        FontWeight="Bold"
                        HorizontalAlignment="Left"

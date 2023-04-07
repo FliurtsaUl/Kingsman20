@@ -221,6 +221,7 @@
       <DependentUpon>DB.edmx</DependentUpon>
       <LastGenOutput>DB.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\ImageService\product\noski.jpg" />
     <Resource Include="Res\ImageService\ikonki\add.png" />
     <Resource Include="Res\ImageAuth\reg.png" />
     <Resource Include="Res\ImageService\ikonki\user.png" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,51 @@ namespace Kingsman20.Windows
     /// </summary>
     public partial class AddServiceWindow : Window
     {
+        private string pathImage = null;
         public AddServiceWindow()
         {
             InitializeComponent();
+
+            CmbTypeService.ItemsSource = ClassHelper.EF.context.TypeOfService.ToList();
+            CmbTypeService.DisplayMemberPath = "Title";
+            CmbTypeService.SelectedIndex = 0;
         }
+        private void BtnChooseImage_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                ImgImageService.Source = new BitmapImage(new Uri(openFileDialog.FileName));
+
+                pathImage = openFileDialog.FileName;
+            }
+        }
+
+        private void BtnAddService_Click(object sender, RoutedEventArgs e)
+        {
+
+            //валидация 
+
+            // добавление услуги
+            DataBase.Service newService = new DataBase.Service();
+
+            newService.Price = Convert.ToDecimal(TbPriceService.Text);
+            newService.Title = TbNameService.Text;
+            newService.Discription = TbDiscService.Text;
+            newService.IdTypeIfService = (CmbTypeService.SelectedItem as DataBase.TypeOfService).IDTypeOfService;
+            if (pathImage != null)
+            {
+                newService.Photo = pathImage;
+            }
+
+            ClassHelper.EF.context.Service.Add(newService);
+            ClassHelper.EF.context.SaveChanges();
+
+            MessageBox.Show("Услуга добавлена", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            this.Close();
+        }
+
+        
     }
 }
