@@ -28,4 +28,13 @@
 
 <b>Окно регистрации </b>
 
-![image](https://user-images.githubusercontent.com/126571078/228220082-c38f4719-cbc8-4897-b01e-207876839078.png)
+![image](https://user-images.githubusercontent.com/126571078/230600672-8d23b10d-9610-452c-a9d9-eed80d579092.png)
+
+<b>Окно добавления услуги </b>
+
+![image](https://user-images.githubusercontent.com/126571078/230600891-93720aa4-a345-43d8-bbed-0f466d220a11.png)
+
+<b>Удачное добавление услуги </b>
+
+![image](https://user-images.githubusercontent.com/126571078/230600974-5f73f89b-0a30-46e5-8f9e-a5cd5028c8c2.png)
+
