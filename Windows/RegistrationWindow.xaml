@@ -36,7 +36,7 @@
                      Margin="20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
             <TextBlock Text="Password"
                        FontSize="18"
                        HorizontalAlignment="Left"
@@ -50,7 +50,7 @@
                          Background="#FFA1CDF9"
                          BorderBrush="#FFA1CDF9">
             </PasswordBox>
-            <TextBlock Text="LastName"
+            <TextBlock Text="Фамилия"
                        FontSize="18"
                        HorizontalAlignment="Left"
                        Margin="40 2 0 0" Foreground="#FFFDFDFD"/>
@@ -61,8 +61,8 @@
                      Margin="20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
-            <TextBlock Text="FirstName"
+                     Foreground="Black"/>
+            <TextBlock Text="Имя"
                        FontSize="18"
                        HorizontalAlignment="Left"
                        Margin="40 2 0 0" Foreground="#FFFDFDFD"/>
@@ -73,9 +73,10 @@
                          HorizontalAlignment="Center"
                          Margin="20 8 0 0"
                          Background="#FFA1CDF9"
-                         BorderBrush="#FFA1CDF9">
+                         BorderBrush="#FFA1CDF9"
+                         Foreground="Black">
             </TextBox>
-            <TextBlock Text="MiddleName*"
+            <TextBlock Text="Отчество*"
                        FontSize="18"
                        HorizontalAlignment="Left"
                        Margin="40 2 0 0" Foreground="#FFFDFDFD"/>
@@ -86,8 +87,8 @@
                      Margin="20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
-            <TextBlock Text="Bithday"
+                     Foreground="Black"/>
+            <TextBlock Text="Дата рождения"
                        FontSize="18"
                        HorizontalAlignment="Left"
                        Margin="40 2 0 0" Foreground="#FFFDFDFD"/>
@@ -98,11 +99,11 @@
                      Margin="20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
         </StackPanel>
         <StackPanel Width="225"
                      HorizontalAlignment="Right">
-            <TextBlock Text="Gender"
+            <TextBlock Text="Выберите пол"
                        FontSize="18"
                        HorizontalAlignment="Left"
                        Margin="20 70 0 0" Foreground="#FFFDFDFD"/>
@@ -113,8 +114,8 @@
                      Margin="-20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
-            <TextBlock Text="Phone"
+                     Foreground="Black"/>
+            <TextBlock Text="Телефон"
                        FontSize="18"
                        HorizontalAlignment="Left"
                        Margin="20 2 0 0" Foreground="#FFFDFDFD"/>
@@ -125,7 +126,7 @@
                      Margin="-20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
             <TextBlock Text="E-mail*"
                        FontSize="18"
                        HorizontalAlignment="Left"
@@ -137,7 +138,7 @@
                      Margin="-20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
             <TextBlock Text="Размер верха*"
                        FontSize="18"
                        HorizontalAlignment="Left"
@@ -149,7 +150,7 @@
                      Margin="-20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
             <TextBlock Text="Размер низа*"
                        FontSize="18"
                        HorizontalAlignment="Left"
@@ -161,7 +162,7 @@
                      Margin="-20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
             <TextBlock Text="Размер обуви(RUS)*"
                        FontSize="18"
                        HorizontalAlignment="Left"
@@ -173,7 +174,7 @@
                      Margin="-20 8 0 0"
                      Background="#FFA1CDF9" 
                      BorderBrush="#FFA1CDF9"
-                     Foreground="#FFC7E2FB"/>
+                     Foreground="Black"/>
         </StackPanel>
         <Button x:Name="BtnReg"
                 Content="Registration"
@@ -181,7 +182,7 @@
                 FontSize="18"
                 Width="200"
                 Height="60"
-                Margin="125,451,125,45" 
+                Margin="0,400,0,0" 
                 Click="BtnReg_Click" 
                 BorderBrush="#FFA2CEF9"
                 Background="#a2cef9" 

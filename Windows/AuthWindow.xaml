@@ -58,7 +58,13 @@
                     Margin="0 50 0 0" Click="BtnSIngIn_Click" 
                     BorderBrush="#FFA2CEF9" 
                     Foreground="#FF4472B0"
-                    />
+                    >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="16"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
         <TextBlock x:Name="BtnReg" 
                    VerticalAlignment="Top" 

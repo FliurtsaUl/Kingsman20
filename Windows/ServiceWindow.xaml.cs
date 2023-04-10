@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kingsman20.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,23 @@ namespace Kingsman20.Windows
             addServiceWindow.ShowDialog();
 
             // Обновляем лист
+            GetListService();
+        }
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+
+            if (button == null)
+            {
+                return;
+            }
+
+            var service = button.DataContext as DataBase.Service; // получаем выбранную запись
+
+
+            EditServiceWindow editServiceWindow = new EditServiceWindow(service);
+            editServiceWindow.ShowDialog();
+
             GetListService();
         }
     }
