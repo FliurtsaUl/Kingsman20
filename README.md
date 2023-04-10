@@ -38,3 +38,6 @@
 
 ![image](https://user-images.githubusercontent.com/126571078/230600974-5f73f89b-0a30-46e5-8f9e-a5cd5028c8c2.png)
 
+<b>Окно редактирования услуги</b>
+
+![image](https://user-images.githubusercontent.com/126571078/230908569-eaf87d24-5dd2-4815-8758-683cac24eea6.png)
