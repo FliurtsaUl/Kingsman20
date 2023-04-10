@@ -45,3 +45,8 @@
 <b>Успешное изменение</b>
 
 ![image](https://user-images.githubusercontent.com/126571078/230908987-12e9dd72-4573-4f67-a6b0-0ce5e8a0b92c.png)
+
+<b>Главное меню</b>
+
+![image](https://user-images.githubusercontent.com/126571078/230913758-bd9dc4cd-642f-4bf7-bade-e89196a4103b.png)
+
