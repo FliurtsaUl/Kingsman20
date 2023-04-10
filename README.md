@@ -40,4 +40,8 @@
 
 <b>Окно редактирования услуги</b>
 
-![image](https://user-images.githubusercontent.com/126571078/230908569-eaf87d24-5dd2-4815-8758-683cac24eea6.png)
+![image](https://user-images.githubusercontent.com/126571078/230908624-a49c5d94-3dcb-406a-8436-9e465762d75f.png)
+
+<b>Успешное изменение</b>
+
+![image](https://user-images.githubusercontent.com/126571078/230908987-12e9dd72-4573-4f67-a6b0-0ce5e8a0b92c.png)
