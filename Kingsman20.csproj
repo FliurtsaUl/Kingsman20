@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\CartServiceClass.cs" />
     <Compile Include="ClassHelper\EF.cs" />
     <Compile Include="DataBase\Branch.cs">
       <DependentUpon>DB.tt</DependentUpon>
@@ -125,19 +126,22 @@
     <Compile Include="Windows\AddServiceWindow.xaml.cs">
       <DependentUpon>AddServiceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\ClientInfWindow.xaml.cs">
+    <Compile Include="Windows\CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Main\ClientInfWindow.xaml.cs">
       <DependentUpon>ClientInfWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\EditServiceWindow.xaml.cs">
       <DependentUpon>EditServiceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\EmployeesInfWindow.xaml.cs">
+    <Compile Include="Windows\Main\EmployeesInfWindow.xaml.cs">
       <DependentUpon>EmployeesInfWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\ServiceWindow.xaml.cs">
+    <Compile Include="Windows\Main\ServiceWindow.xaml.cs">
       <DependentUpon>ServiceWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\AddServiceWindow.xaml">
@@ -148,7 +152,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\ClientInfWindow.xaml">
+    <Page Include="Windows\CartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Main\ClientInfWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,7 +164,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\EmployeesInfWindow.xaml">
+    <Page Include="Windows\Main\EmployeesInfWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,7 +194,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\ServiceWindow.xaml">
+    <Page Include="Windows\Main\ServiceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

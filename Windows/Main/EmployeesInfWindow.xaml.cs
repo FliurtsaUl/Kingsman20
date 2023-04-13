@@ -22,6 +22,17 @@ namespace Kingsman20.Windows
         public EmployeesInfWindow()
         {
             InitializeComponent();
+            GetListService();
+        }
+        private void GetListService()
+        {
+            LvClient.ItemsSource = ClassHelper.EF.context.Employee.ToList();
+        }
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

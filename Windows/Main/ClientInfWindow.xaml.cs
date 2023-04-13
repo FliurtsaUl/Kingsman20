@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kingsman20.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,17 @@ namespace Kingsman20.Windows
         public ClientInfWindow()
         {
             InitializeComponent();
+            GetListService();
+        }
+        private void GetListService()
+        {
+            LvClient.ItemsSource = ClassHelper.EF.context.Client.ToList();
+        }
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

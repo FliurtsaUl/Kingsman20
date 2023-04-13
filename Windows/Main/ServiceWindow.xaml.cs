@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Kingsman20.ClassHelper;
 
 namespace Kingsman20.Windows
 {
@@ -53,6 +54,11 @@ namespace Kingsman20.Windows
             editServiceWindow.ShowDialog();
 
             GetListService();
+        }
+        private void BtnCart_Click(object sender, RoutedEventArgs e)
+        {
+            CartWindow cartWindow = new CartWindow();
+            cartWindow.ShowDialog();
         }
     }
 }
