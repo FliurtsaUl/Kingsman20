@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="ClassHelper\CartServiceClass.cs" />
     <Compile Include="ClassHelper\EF.cs" />
+    <Compile Include="ClassHelper\UserDataClass.cs" />
     <Compile Include="DataBase\Branch.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
@@ -250,6 +251,7 @@
       <DependentUpon>DB.edmx</DependentUpon>
       <LastGenOutput>DB.cs</LastGenOutput>
     </Content>
+    <Resource Include="Res\ImageService\ikonki\minus.png" />
     <Resource Include="Res\ImageService\ikonki\edit.png" />
     <Resource Include="Res\ImageService\product\noski.jpg" />
     <Resource Include="Res\ImageService\ikonki\add.png" />

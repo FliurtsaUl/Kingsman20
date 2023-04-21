@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kingsman20.ClassHelper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,39 @@ namespace Kingsman20.Windows
         }
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
+            ServiceWindow serviceWindow = new ServiceWindow();  
+            serviceWindow.Show();
+            this.Close();
+        }
+
+        private void BtnPay_Click(object sender, RoutedEventArgs e)
+        {
+            EF.context.Order.Add(new DataBase.Order
+            {
+                IdClient = 1,
+                IdEmployee = UserDataClass.Employee.IDEmployee,
+                StartTime = DateTime.Now,
+                EndDate = DateTime.Now,
+            }
+            );
+
+            foreach (var item in ClassHelper.CartServiceClass.ServiceCart)
+            {
+                DataBase.OrderService orderService = new DataBase.OrderService();
+                orderService.IdOrder = 1;
+                orderService.IdService = item.IDService;
+                orderService.Quantity = 1;
+
+                EF.context.OrderService.Add(orderService);
+
+            }
+
+
+
+
+            EF.context.SaveChanges();
+            // переход на главную
+
             this.Close();
         }
     }

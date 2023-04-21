@@ -107,7 +107,7 @@
                 Background="#FFA2CEF9" 
                 BorderBrush="#FFA2CEF9" 
                 HorizontalAlignment="Center" 
-                VerticalAlignment="Top"/>
+                VerticalAlignment="Top" Click="BtnKorz_Click"/>
             </TextBlock>
         </TextBlock>
 

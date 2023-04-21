@@ -110,16 +110,25 @@
                 VerticalAlignment="Top"/>
             </TextBlock>
         </TextBlock>
-
-        <ListView x:Name="Name"
-                  Grid.Row="1"
-                  Background="#FFA2CEF9">
-            <TextBlock Margin="20 0 0 0">
+        <TextBlock Margin="20 0 0 0"
+                       Grid.Row="1">
                 <Run FontSize="30" 
                      Foreground="White" 
                      FontWeight="Bold">Корзина</Run>
             </TextBlock>
-        </ListView>
+        <Button x:Name="BtnPay"
+                Grid.Row="1"
+                Content="Оформить заказ"
+                HorizontalAlignment="Right"
+                FontSize="18"
+                Height="38"
+                Width="147"
+                FontWeight="Bold"
+                Margin="0 0 20 0"
+                BorderThickness="0 0 0 0"
+                Foreground="White"
+                Background="#FFA2CEF9" Click="BtnPay_Click"
+                />
         <ListView x:Name="LvCartService"
             Grid.Row="2"
             Background="#FFA2CEF9"   
@@ -168,6 +177,33 @@
                                        Margin="5 3"
                                        Foreground="#808080"
                                        TextWrapping="Wrap"/>
+                            <TextBlock Margin="0 10 20 0"
+                                       HorizontalAlignment="Right">
+                                <Button x:Name="BtnAdd"
+                                    Height="30"
+                                       Width="30">
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="7"/>
+                                        </Style>
+                                </Button.Resources>
+                                <Image Source="/Res/ImageService/ikonki/add.png" 
+                                       Height="20"
+                                       Width="20"/>
+                            </Button>
+                            <Button x:Name="BtnDelet"
+                                    Height="30"
+                                       Width="30">
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="7"/>
+                                    </Style>
+                                </Button.Resources>
+                                <Image Source="/Res/ImageService/ikonki/minus.png" 
+                                       Height="22"
+                                       Width="22" />
+                            </Button>
+                            </TextBlock>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
