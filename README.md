@@ -56,6 +56,7 @@
 
 ![image](https://user-images.githubusercontent.com/126571078/231736510-2d0ae6b9-f4a4-4308-9da8-8be621380afe.png)
 
+<b>Добавление в корзину</b>
 
+![image](https://user-images.githubusercontent.com/126571078/234261906-aa28e57a-8219-4d62-97c7-8453699814a6.png)
 
-![image](https://user-images.githubusercontent.com/126571078/233598430-0da76908-9c1f-4401-84ee-baa29cd3574a.png)
