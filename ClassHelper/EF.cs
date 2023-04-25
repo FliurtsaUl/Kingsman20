@@ -8,7 +8,7 @@ namespace Kingsman20.ClassHelper
 {
     internal class EF
     {
-        public static DataBase.Entities20 context { get; } = new DataBase.Entities20();
+        public static DataBase.Entities20 Context { get; } = new DataBase.Entities20();
 
     }
 }

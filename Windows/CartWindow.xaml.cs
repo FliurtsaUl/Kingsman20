@@ -1,4 +1,5 @@
 ﻿using Kingsman20.ClassHelper;
+using Kingsman20.DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,39 +48,43 @@ namespace Kingsman20.Windows
         }
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
-            ServiceWindow serviceWindow = new ServiceWindow();  
+            ServiceWindow serviceWindow = new ServiceWindow();
             serviceWindow.Show();
             this.Close();
         }
 
         private void BtnPay_Click(object sender, RoutedEventArgs e)
         {
-            EF.context.Order.Add(new DataBase.Order
-            {
-                IdClient = 1,
-                IdEmployee = UserDataClass.Employee.IDEmployee,
-                StartTime = DateTime.Now,
-                EndDate = DateTime.Now,
-            }
-            );
+            DataBase.Order order = new DataBase.Order();
+
+            order.IdClient = 1;
+            order.IdEmployee = 1; //UserDataClass.Employee.IDEmployee;
+            order.StartTime = DateTime.Now;
+            order.EndDate = DateTime.Now;
+
+            EF.Context.Order.Add(order);
+
+            EF.Context.SaveChanges();
 
             foreach (var item in ClassHelper.CartServiceClass.ServiceCart)
             {
                 DataBase.OrderService orderService = new DataBase.OrderService();
-                orderService.IdOrder = 1;
+                orderService.IdOrder = 14;
                 orderService.IdService = item.IDService;
                 orderService.Quantity = 1;
 
-                EF.context.OrderService.Add(orderService);
-
+                EF.Context.OrderService.Add(orderService);
+                EF.Context.SaveChanges();
             }
-
-
-
-
-            EF.context.SaveChanges();
+            EF.Context.SaveChanges();
             // переход на главную
 
+            MessageBox.Show("Зaказ оформлен");
+
+            ClassHelper.CartServiceClass.ServiceCart.Clear();
+
+            ServiceWindow serviceWindow = new ServiceWindow();
+            serviceWindow.Show();
             this.Close();
         }
     }

@@ -39,7 +39,7 @@ namespace Kingsman20.Windows
 
             // Заполнение типа услуги
 
-            CmbTypeService.ItemsSource = ClassHelper.EF.context.TypeOfService.ToList();
+            CmbTypeService.ItemsSource = ClassHelper.EF.Context.TypeOfService.ToList();
             CmbTypeService.DisplayMemberPath = "Title";
 
             // выгрузка изображения 
@@ -51,7 +51,7 @@ namespace Kingsman20.Windows
             TbPriceService.Text = Convert.ToString(service.Price);
 
             // заполнение типа услуги
-            CmbTypeService.SelectedItem = ClassHelper.EF.context.TypeOfService.Where(i => i.IDTypeOfService == service.IdTypeIfService).FirstOrDefault();
+            CmbTypeService.SelectedItem = ClassHelper.EF.Context.TypeOfService.Where(i => i.IDTypeOfService == service.IdTypeIfService).FirstOrDefault();
 
         }
 
@@ -63,7 +63,7 @@ namespace Kingsman20.Windows
             editService.Price = Convert.ToDecimal(TbPriceService.Text);
             editService.IdTypeIfService = (CmbTypeService.SelectedItem as DataBase.TypeOfService).IDTypeOfService;
 
-            ClassHelper.EF.context.SaveChanges();
+            ClassHelper.EF.Context.SaveChanges();
 
             MessageBox.Show("Данные успешно сохранны");
 

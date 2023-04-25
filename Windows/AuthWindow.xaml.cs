@@ -28,7 +28,7 @@ namespace Kingsman20.Windows
         {
 
             //проверка на наличие поль-я
-            var userAuth = ClassHelper.EF.context.Employee.ToList().
+            var userAuth = ClassHelper.EF.Context.Employee.ToList().
                 Where(i => i.Login == TbLogin.Text && i.Password == PbPassword.Password).
                 FirstOrDefault();
             if (userAuth != null)

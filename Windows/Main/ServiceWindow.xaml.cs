@@ -28,7 +28,7 @@ namespace Kingsman20.Windows
         }
         private void GetListService()
         {
-            LvService.ItemsSource = ClassHelper.EF.context.Service.ToList();
+            LvService.ItemsSource = ClassHelper.EF.Context.Service.ToList();
         }
         private void BtnAddService_Click(object sender, RoutedEventArgs e)
         {

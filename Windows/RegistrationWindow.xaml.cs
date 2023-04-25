@@ -22,15 +22,15 @@ namespace Kingsman20.Windows
         public RegistrationWindow()
         {
             InitializeComponent();
-            CmbGender.ItemsSource = ClassHelper.EF.context.Gender.ToList();
+            CmbGender.ItemsSource = ClassHelper.EF.Context.Gender.ToList();
             CmbGender.DisplayMemberPath = "Name";
             CmbGender.SelectedIndex = 0;
 
-            TbTopSize.ItemsSource = ClassHelper.EF.context.Size.ToList();
+            TbTopSize.ItemsSource = ClassHelper.EF.Context.Size.ToList();
             TbTopSize.DisplayMemberPath = "Size1";
             TbTopSize.SelectedIndex = 0;
 
-            TbBottomSize.ItemsSource = ClassHelper.EF.context.Size.ToList();
+            TbBottomSize.ItemsSource = ClassHelper.EF.Context.Size.ToList();
             TbBottomSize.DisplayMemberPath = "Size1";
             TbBottomSize.SelectedIndex = 0;
         }
@@ -90,10 +90,10 @@ namespace Kingsman20.Windows
             }
 
 
-            ClassHelper.EF.context.Client.Add(addClient);
+            ClassHelper.EF.Context.Client.Add(addClient);
 
             // сохранение
-            ClassHelper.EF.context.SaveChanges();
+            ClassHelper.EF.Context.SaveChanges();
 
             MessageBox.Show("Пользователь успешно добавлен");
 

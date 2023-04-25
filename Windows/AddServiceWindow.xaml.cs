@@ -25,7 +25,7 @@ namespace Kingsman20.Windows
         {
             InitializeComponent();
 
-            CmbTypeService.ItemsSource = ClassHelper.EF.context.TypeOfService.ToList();
+            CmbTypeService.ItemsSource = ClassHelper.EF.Context.TypeOfService.ToList();
             CmbTypeService.DisplayMemberPath = "Title";
             CmbTypeService.SelectedIndex = 0;
         }
@@ -57,8 +57,8 @@ namespace Kingsman20.Windows
                 newService.Photo = pathImage;
             }
 
-            ClassHelper.EF.context.Service.Add(newService);
-            ClassHelper.EF.context.SaveChanges();
+            ClassHelper.EF.Context.Service.Add(newService);
+            ClassHelper.EF.Context.SaveChanges();
 
             MessageBox.Show("Услуга добавлена", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
 

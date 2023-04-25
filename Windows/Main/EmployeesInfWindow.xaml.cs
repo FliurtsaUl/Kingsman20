@@ -26,7 +26,7 @@ namespace Kingsman20.Windows
         }
         private void GetListService()
         {
-            LvClient.ItemsSource = ClassHelper.EF.context.Employee.ToList();
+            LvClient.ItemsSource = ClassHelper.EF.Context.Employee.ToList();
         }
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
