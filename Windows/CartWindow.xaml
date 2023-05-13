@@ -179,7 +179,7 @@
                                        TextWrapping="Wrap"/>
                             <TextBlock Margin="0 10 20 0"
                                        HorizontalAlignment="Right">
-                                <Button x:Name="BtnAdd"
+                                <Button x:Name="BtnAdd_Click"
                                     Height="30"
                                        Width="30">
                                     <Button.Resources>
@@ -191,13 +191,14 @@
                                        Height="20"
                                        Width="20"/>
                                 </Button>
-                                <Label Height="30"
-                                       Width="30"
-                                       Content="1"
-                                       FontSize="18" 
-                                       HorizontalAlignment="Center" 
-                                       HorizontalContentAlignment="Center" />
-                                <Button x:Name="BtnDelet"
+                                <TextBox x:Name="TbCartQuant"
+                                    Height="30"
+                                    Width="30"
+                                    FontSize="18" 
+                                    HorizontalAlignment="Center" 
+                                    HorizontalContentAlignment="Center"
+                                         Text="{Binding Count}"/>
+                                <Button x:Name="BtnDelet_Click"
                                         Height="30"
                                         Width="30">
                                     <Button.Resources>

@@ -86,6 +86,40 @@ namespace Kingsman20.Windows
             ServiceWindow serviceWindow = new ServiceWindow();
             serviceWindow.Show();
             this.Close();
+
+        }
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+            var service = button.DataContext as DataBase.Service;
+
+            if (service.Count > 1)
+            {
+                service.Count--;
+            }
+
+            SetListServise();
+        }
+
+        private void BtnDelet_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+            var service = button.DataContext as DataBase.Service;
+
+            if (service.Count < 10)
+            {
+                service.Count++;
+            }
+
+            SetListServise();
         }
     }
 }
