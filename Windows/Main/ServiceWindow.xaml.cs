@@ -64,7 +64,7 @@ namespace Kingsman20.Windows
             }
             var service = button.DataContext as DataBase.Service; // получаем выбранную запись
 
-
+            service.Count++;
             CartServiceClass.ServiceCart.Add(service);
 
             MessageBox.Show($"Услуга {service.Title} добавлена в корзину!");

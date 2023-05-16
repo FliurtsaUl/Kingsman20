@@ -34,6 +34,7 @@ namespace Kingsman20.Windows
             if (userAuth != null)
             {
                 //главное окно
+                ClassHelper.UserDataClass.Employee = userAuth;
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();

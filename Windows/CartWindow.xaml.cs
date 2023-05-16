@@ -2,6 +2,7 @@
 using Kingsman20.DataBase;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,8 @@ namespace Kingsman20.Windows
 
         private void SetListServise()
         {
-            LvCartService.ItemsSource = ClassHelper.CartServiceClass.ServiceCart;
+            ObservableCollection<DataBase.Service> listCart = new ObservableCollection<DataBase.Service>(ClassHelper.CartServiceClass.ServiceCart);
+            LvCartService.ItemsSource = listCart.Distinct();
 
         }
 
@@ -55,36 +57,43 @@ namespace Kingsman20.Windows
 
         private void BtnPay_Click(object sender, RoutedEventArgs e)
         {
-            DataBase.Order order = new DataBase.Order();
-
-            order.IdClient = 1;
-            order.IdEmployee = 1; //UserDataClass.Employee.IDEmployee;
-            order.StartTime = DateTime.Now;
-            order.EndDate = DateTime.Now;
-
-            EF.Context.Order.Add(order);
-
-            EF.Context.SaveChanges();
-
-            foreach (var item in ClassHelper.CartServiceClass.ServiceCart)
+            if (ClassHelper.CartServiceClass.ServiceCart.Count != 0)
             {
-                DataBase.OrderService orderService = new DataBase.OrderService();
-                orderService.IdOrder = 14;
-                orderService.IdService = item.IDService;
-                orderService.Quantity = 1;
+                DataBase.Order newOrder = new DataBase.Order();
 
-                EF.Context.OrderService.Add(orderService);
-                EF.Context.SaveChanges();
+                if (ClassHelper.UserDataClass.Employee != null)
+                {
+                    newOrder.IdClient = 1;
+                    newOrder.IdEmployee = ClassHelper.UserDataClass.Employee.IDEmployee;
+                }
+                else
+                {
+                    newOrder.IdClient = 1;
+                    newOrder.IdEmployee = 1;
+                }
+                newOrder.StartTime = DateTime.Now;
+
+                ClassHelper.EF.Context.Order.Add(newOrder);
+                ClassHelper.EF.Context.SaveChanges();
+
+                foreach (DataBase.Service item in ClassHelper.CartServiceClass.ServiceCart.Distinct())
+                {
+                    DataBase.OrderService newOrderService = new DataBase.OrderService();
+                    newOrderService.IdOrder = newOrder.IDOrder;
+                    newOrderService.IdService = item.IDService;
+                    newOrderService.Quantity = item.Count;
+
+                    ClassHelper.EF.Context.OrderService.Add(newOrderService);
+                    ClassHelper.EF.Context.SaveChanges();
+                }
+
+                MessageBox.Show("Заказ успешно оформлен!");
             }
-            EF.Context.SaveChanges();
-            // переход на главную
+            else
+            {
+                MessageBox.Show("Корзина пуста");
+            }
 
-            MessageBox.Show("Зaказ оформлен");
-
-            ClassHelper.CartServiceClass.ServiceCart.Clear();
-
-            ServiceWindow serviceWindow = new ServiceWindow();
-            serviceWindow.Show();
             this.Close();
 
         }
@@ -104,7 +113,7 @@ namespace Kingsman20.Windows
 
             SetListServise();
         }
-
+          
         private void BtnDelet_Click(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;

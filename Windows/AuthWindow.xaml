@@ -27,7 +27,6 @@
                        HorizontalAlignment="Center"
                        Margin="0 30 0 0" Foreground="#FFFDFDFD"/>
             <TextBox x:Name="TbLogin"
-                     Text="Login"
                      FontSize="18"
                      Width="166"
                      Height="26"
