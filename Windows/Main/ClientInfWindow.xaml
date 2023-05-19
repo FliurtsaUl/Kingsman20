@@ -9,6 +9,10 @@
         Background="#FFA2CEF9" 
         WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
         <Button x:Name="BtnExit"
                 Content="Вернуться назад"
                 FontSize="18"
@@ -58,5 +62,16 @@
                 </ListView.View>
             </ListView>
         </StackPanel>
+        <Button Grid.Row="2"
+            x:Name="BtnAddClient"
+                Width="40"
+                Height="40"
+                Background="{x:Null}"
+                BorderThickness="0"
+                HorizontalAlignment="Right"
+                Margin="0 0 65 0"
+                Click="BtnAddClient_Click">
+            <Image Source="/Res/ImageService/ikonki/add.png"/>
+        </Button>
     </Grid>
 </Window>

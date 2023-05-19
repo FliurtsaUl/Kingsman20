@@ -62,7 +62,8 @@ namespace Kingsman20.Windows
 
             MessageBox.Show("Услуга добавлена", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            this.Close();
+            EmployeesInfWindow employeesInfWindow = new EmployeesInfWindow();
+            employeesInfWindow.ShowDialog();
         }
 
         

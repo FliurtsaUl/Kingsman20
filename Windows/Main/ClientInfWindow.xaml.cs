@@ -1,4 +1,5 @@
 ﻿using Kingsman20.DataBase;
+using Kingsman20.Windows.Add;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,12 @@ namespace Kingsman20.Windows
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Close();
+        }
+        private void BtnAddClient_Click(object sender, RoutedEventArgs e)
+        {
+            AddClientWindow addClientWindow = new AddClientWindow();    
+            addClientWindow.Show();
             this.Close();
         }
     }

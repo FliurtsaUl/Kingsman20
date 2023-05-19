@@ -22,6 +22,33 @@ namespace Kingsman20.Windows.Add
         public AddEmployeeWindow()
         {
             InitializeComponent();
+            CmbPositEmp.ItemsSource = ClassHelper.EF.Context.Position.ToList();
+            CmbPositEmp.DisplayMemberPath = "Title";
+            CmbPositEmp.SelectedIndex = 0;
+        }
+        private void BtnAddEmployee_Click(object sender, RoutedEventArgs e)
+        {
+
+            //валидация 
+
+            // добавление услуги
+            DataBase.Employee employee = new DataBase.Employee();
+
+            employee.LastName = TbLNameEmp.Text;
+            employee.FirstName = TbLNameEmp.Text;
+            employee.Patronymic = TbPathEmp.Text;
+            employee.Phone = TbPhoneEmp.Text;
+            employee.IdPosition = (CmbPositEmp.SelectedItem as DataBase.Position).IDPosition;
+            employee.Login = TbLoginEmp.Text;
+            employee.Password = TbPasswordEmp.Text;
+
+
+            ClassHelper.EF.Context.Employee.Add(employee);
+            ClassHelper.EF.Context.SaveChanges();
+
+            MessageBox.Show("Сотрудник Добавлен", "Удачно!", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            this.Close();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kingsman20.Windows.Add;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,12 @@ namespace Kingsman20.Windows
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Close();
+        }
+        private void BtnAddEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            AddEmployeeWindow addEmployeeWindow = new AddEmployeeWindow();
+            addEmployeeWindow.Show();
             this.Close();
         }
     }
